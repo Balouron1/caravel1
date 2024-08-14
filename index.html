@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caravel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="carousel-container" id="carousel">
+      <div class="carousel">
+        <div class="slide">
+          <img src="./carousel/WEB1 copy.png" alt="Image 1" />
+        </div>
+        <div class="slide">
+          <img src="./carousel/WEB2 copy.png" alt="Image 2" />
+        </div>
+        <div class="slide">
+          <img src="./carousel/WEB3 copy.png" alt="Image 3" />
+        </div>
+        <div class="slide">
+          <img src="./carousel/WEB4 copy.png" alt="Image 4" />
+        </div>
+        <div class="slide">
+          <img src="./carousel/WEB5 copy.png" alt="Image 5" />
+        </div>
+        <div class="slide">
+          <img src="./carousel/WEB6 copy.png" alt="Image 6" />
+        </div>
+        <div class="slide">
+          <img src="./carousel/WEB7 copy.png" alt="Image 7" />
+        </div>
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <nav class="navbar">
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a href="#carousel">Αρχική</a></li>
+        <li><a href="#about">Ιστορία</a></li>
+        <li><a href="#sugarfree">Μπάρες</a></li>
+        <li><a href="#epikinonia">Επικοινωνία</a></li>
+      </ul>
+    </nav>
+
+    <div class="sugar-free">
+      <a href="#sugarfree"
+        ><img src="./New folder/sugar free.png" alt="sugar-free"
+      /></a>
+    </div>
+
+    <div class="image-grid">
+      <div class="grid-item">
+        <a href="#superbars1"
+          ><img src="./New folder/bromi.png" alt="βρωμη"
+        /></a>
+      </div>
+      <div class="grid-item">
+        <a href="#energyxourmades"
+          ><img src="./New folder/xourmades.png" alt="χουρμαδες"
+        /></a>
+      </div>
+      <div class="grid-item">
+        <a href="#energybar"><img src="./New folder/meli.png" alt="μελι" /></a>
+      </div>
+      <div class="grid-item">
+        <a href="#energybarkotsi"
+          ><img src="./New folder/kotsiberi.png" alt="κοτσιμπερι"
+        /></a>
+      </div>
+      <div class="grid-item">
+        <a href="#energybartaxini"
+          ><img src="./New folder/damaskino.png" alt="δαμασκηνο"
+        /></a>
+      </div>
+      <div class="grid-item">
+        <a href="#energybaragavis"
+          ><img src="./New folder/agavi.png" alt="αγαβη"
+        /></a>
+      </div>
+    </div>
+
+    <div class="sokolata">
+      <a href="#chocolate"
+        ><img src="./New folder/sokolata.png" alt="sokolata"
+      /></a>
+    </div>
+
+    <!-- New Flexbox Container -->
+    <div class="flexbox-container">
+      <div class="flexbox-item">
+        <a href="#energybargalaktos"
+          ><img src="./New folder/φιστικι.png" alt="φιστικι"
+        /></a>
+      </div>
+      <div class="flexbox-item">
+        <a href="#energybargofreta"
+          ><img src="./New folder/pralina.png" alt="πραλινα"
+        /></a>
+      </div>
+    </div>
+
+    <div class="protein">
+      <a href="#proteini"
+        ><img src="./New folder/protein.png" alt="πρωτεινη"
+      /></a>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-new">
+        <a href="#stevia"
+          ><img src="./New folder/proteini.png" alt="πρωτεινη"
+        /></a>
+      </div>
+    </div>
+
+    <div class="dimitriaka">
+      <a href="#cereal"
+        ><img src="./New folder/dimitriaka.png" alt="δημητριακα"
+      /></a>
+    </div>
+
+    <div class="dimitriaka-container">
+      <div class="dimitriaka-item">
+        <a href="#energybarpralina"
+          ><img src="./New folder/φουντουκι.png" alt="φουντουκι"
+        /></a>
+      </div>
+      <div class="dimitriaka-item">
+        <a href="#energybarrodi"
+          ><img src="./New folder/ροδι.png" alt="ροδι"
+        /></a>
+      </div>
+      <div class="dimitriaka-item">
+        <a href="#energybarkaramela"
+          ><img src="./New folder/καραμελα.png" alt="καραμελα"
+        /></a>
+      </div>
+    </div>
+
+    <div id="sugarfree">
+      <img src="./New folder/sugar free.png" alt="sugar-free" />
+    </div>
+    <div id="superbars1">
+      <img src="./New folder/super bars 1.png" alt="superbars1" />
+    </div>
+    <div id="energybar">
+      <img src="./New folder/energy bar.png" alt="energybar" />
+    </div>
+    <div id="energyxourmades">
+      <img src="./New folder/energy bar xourmades.png" alt="energyxourmades" />
+    </div>
+    <div id="energybaragavis">
+      <img src="./New folder/energy bar agavis.png" alt="energybaragavis" />
+    </div>
+    <div id="energybartaxini">
+      <img src="./New folder/energy bar taxini.png" alt="energybartaxini" />
+    </div>
+    <div id="energybarkotsi">
+      <img src="./New folder/energy bar kotsib.png" alt="energybarkotsi" />
+    </div>
+    <div id="chocolate">
+      <img src="./New folder/sokolata.png" alt="sokolata" />
+    </div>
+    <div id="energybargalaktos">
+      <img src="./New folder/energy bar galaktos.png" alt="energybargalaktos" />
+    </div>
+    <div id="energybargofreta">
+      <img src="./New folder/energy bar gofreta.png" alt="energybargofreta" />
+    </div>
+    <div id="proteini">
+      <img src="./New folder/protein.png" alt="πρωτεινη" />
+    </div>
+    <div id="stevia">
+      <img src="./New folder/stevia.png" alt="stevia" />
+    </div>
+    <div id="cereal">
+      <img src="./New folder/dimitriaka.png" alt="δημητριακα" />
+    </div>
+    <div id="energybarpralina">
+      <img src="./New folder/energy bar pralina.png" alt="pralina" />
+    </div>
+    <div id="energybarrodi">
+      <img src="./New folder/energy bar rodi.png" alt="energybarrodi" />
+    </div>
+    <div id="energybarkaramela">
+      <img src="./New folder/energy bar karamela.png" alt="energybarkaramela" />
+    </div>
+    <div id="epikinonia">
+      <h1>Επικοινωνία</h1>
+    </div>
+    <nav class="contact">
+      <div class="menu-toggle1" id="menu-toggle1">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar-menu1" id="navbar-menu1">
+        <li>
+          <a
+            href="https://www.google.com/maps/place/CARAVEL/@38.2943355,21.7886395,20z/data=!4m15!1m8!3m7!1s0x135e4b939bc65647:0x777247f979971c98!2sAthinon+25,+Rio+265+04!3b1!8m2!3d38.2945111!4d21.788814!16s%2Fg%2F11gg6k5fvk!3m5!1s0x135e4996cfc47f25:0xe97bb3ae925cebf1!8m2!3d38.2944336!4d21.7885956!16s%2Fg%2F11btz2jk1n?entry=ttu"
+            >Αθηνών 25, Ρίο, Πάτρα,</a
+          >
+        </li>
+        <li>τηλ. 2610 995890</li>
+        <li>email: info@plathocaravel.gr</li>
+      </ul>
+    </nav>
+    <nav class="social">
+      <div class="socials" id="socials">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar-menu2" id="navbar-menu2">
+        <li>
+          <a href="https://www.facebook.com/plathocaravel">
+            <img
+              src="./icons/5296500_fb_social media_facebook_facebook logo_social network_icon.png"
+              alt="facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/caravel_energy_bars/">
+            <img
+              src="./icons/5296765_camera_instagram_instagram logo_icon (1).png"
+              alt="instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@caravel.patisserie"
+            ><img
+              src="./icons/5576018_communication_media_network_social_tik_icon (1).png"
+              alt="tiktok"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2023 <a href="https://caravels.gr" target="_blank">Caravel</a></p>
+      <p><a href="http://wework.gr/" target="_blank">wework design</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

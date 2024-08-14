@@ -1,0 +1,538 @@
+/* Carousel Styles */
+.carousel-container {
+  position: relative;
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  transition: 0.5s;
+  border-radius: 3px;
+  user-select: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* NavBar Styles */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: underline;
+  transition: transform 0.3s ease;
+}
+
+.navbar li a:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive NavBar Styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-menu li {
+    float: none;
+  }
+
+  .navbar-menu li a {
+    padding: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.sugar-free {
+  list-style-type: none;
+  margin: 0;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.sugar-free a:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Styles for Tablets */
+@media (max-width: 1024px) {
+  .sugar-free {
+    padding: 15px;
+  }
+}
+
+/* Responsive Styles for Mobile Phones */
+@media (max-width: 768px) {
+  .sugar-free {
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Image Grid Styles */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 91px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.grid-item img {
+  width: 100%;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Styles for Tablets */
+@media (max-width: 1024px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px; /* Μείωση του κενό για tablets */
+  }
+}
+
+/* Responsive Styles for Mobile Phones */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr; /* Μία στήλη για κινητά τηλέφωνα */
+    gap: 30px; /* Μείωση του κενό για κινητά τηλέφωνα */
+    width: 90%; /* Μικρότερο πλάτος για κινητά τηλέφωνα */
+  }
+}
+.sokolata {
+  list-style-type: none;
+  margin: 0;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.sokolata a:hover {
+  transform: scale(1.1);
+}
+
+.flexbox-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 91px;
+  width: 53%;
+  margin: 20px auto;
+}
+
+.flexbox-item img {
+  width: 100%;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.flexbox-item img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Styles for Tablets */
+@media (max-width: 1024px) {
+  .sokolata {
+    padding: 30px; /* Μείωση του padding για tablets */
+  }
+
+  .flexbox-container {
+    grid-template-columns: repeat(2, 1fr); /* Δύο στήλες για tablets */
+    gap: 60px; /* Μείωση του κενό για tablets */
+    width: 70%; /* Μικρότερο πλάτος για tablets */
+  }
+}
+
+/* Responsive Styles for Mobile Phones */
+@media (max-width: 768px) {
+  .sokolata {
+    padding: 20px; /* Μείωση του padding για κινητά τηλέφωνα */
+    flex-direction: column; /* Στοίχιση στοιχείων κάθετα */
+    align-items: center; /* Κεντράρισμα στοιχείων */
+  }
+
+  .flexbox-container {
+    grid-template-columns: 1fr; /* Μία στήλη για κινητά τηλέφωνα */
+    gap: 30px; /* Μείωση του κενό για κινητά τηλέφωνα */
+    width: 90%; /* Μικρότερο πλάτος για κινητά τηλέφωνα */
+  }
+}
+
+.protein {
+  list-style-type: none;
+  margin: 0;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.protein a:hover {
+  transform: scale(1.1);
+}
+
+.grid-container {
+  display: flexbox;
+  gap: 91px;
+  width: 25%;
+  margin: 20px auto;
+}
+
+.grid-new img {
+  width: 100%;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.grid-new img:hover {
+  transform: scale(1.1);
+}
+
+.dimitriaka {
+  list-style-type: none;
+  margin: 0;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.dimitriaka a:hover {
+  transform: scale(1.1);
+}
+
+.dimitriaka-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 91px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.dimitriaka-item img {
+  width: 100%;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.dimitriaka-item img:hover {
+  transform: scale(1.1);
+}
+
+#sugarfree {
+  list-style-type: none;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#superbars1 {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #af7977;
+}
+
+#energybar {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #a48d86;
+}
+
+#energyxourmades {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #77bfe2;
+}
+
+#energybaragavis {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #a4bfbd;
+}
+
+#energybartaxini {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #d1cb73;
+}
+
+#energybarkotsi {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #ee8da9;
+}
+
+#chocolate {
+  list-style-type: none;
+  margin-top: 100px;
+  margin-bottom: 15px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#energybargalaktos {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #9da83f;
+}
+
+#energybargofreta {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #a88e4e;
+}
+
+#proteini {
+  list-style-type: none;
+  margin-top: 100px;
+  margin-bottom: 15px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#stevia {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #a0bb7e;
+}
+
+#cereal {
+  list-style-type: none;
+  margin-top: 100px;
+  margin-bottom: 15px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#energybarpralina {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #c0a698;
+}
+
+#energybarrodi {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #e25166;
+}
+
+#energybarkaramela {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #c6b695;
+}
+
+body {
+  background-color: #fff;
+  padding: 0;
+}
+/* Tablets */
+@media (max-width: 1024px) {
+  .protein {
+    padding: 30px; /* Μείωση του padding για tablets */
+  }
+
+  .grid-container {
+    width: 50%; /* Μικρότερο πλάτος για tablets */
+    gap: 60px; /* Μείωση του κενό για tablets */
+  }
+
+  .dimitriaka {
+    padding: 30px; /* Μείωση του padding για tablets */
+  }
+
+  .dimitriaka-container {
+    grid-template-columns: repeat(2, 1fr); /* Δύο στήλες για tablets */
+    gap: 60px; /* Μείωση του κενό για tablets */
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  .protein {
+    padding: 20px; /* Μείωση του padding για κινητά τηλέφωνα */
+    flex-direction: column; /* Στοίχιση στοιχείων κάθετα */
+    align-items: center; /* Κεντράρισμα στοιχείων */
+  }
+
+  .grid-container {
+    width: 90%; /* Μικρότερο πλάτος για κινητά τηλέφωνα */
+    gap: 30px; /* Μείωση του κενό για κινητά τηλέφωνα */
+    flex-direction: column; /* Στοίχιση στοιχείων κάθετα */
+  }
+
+  .dimitriaka {
+    padding: 20px; /* Μείωση του padding για κινητά τηλέφωνα */
+    flex-direction: column; /* Στοίχιση στοιχείων κάθετα */
+    align-items: center; /* Κεντράρισμα στοιχείων */
+  }
+
+  .dimitriaka-container {
+    grid-template-columns: 1fr; /* Μία στήλη για κινητά τηλέφωνα */
+    gap: 30px; /* Μείωση του κενό για κινητά τηλέφωνα */
+  }
+}
+
+/* Social Icons Styles */
+.social ul {
+  list-style-type: none;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+}
+
+.social li {
+  margin: 0 10px;
+}
+
+.social li a {
+  display: block;
+  width: auto;
+  height: auto;
+  text-align: center;
+  line-height: normal;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  overflow: hidden;
+  padding: 0;
+  background-color: transparent;
+}
+
+.social li a img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.social li a:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  border-top: 1px solid #eee;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 0.75rem;
+  color: #aaa;
+  display: flex;
+  justify-content: space-between;
+}
+footer a {
+  color: #aaa;
+  text-decoration: none;
+}

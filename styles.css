@@ -1,0 +1,57 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.coming-soon,
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.coming-soon {
+  background-color: #5eb1cd;
+}
+
+.landing {
+  background-color: #c4004f;
+}
+
+.coming-soon img,
+.landing img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    flex-direction: column;
+  }
+
+  .coming-soon,
+  .landing {
+    height: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .coming-soon,
+  .landing {
+    height: 50%;
+  }
+
+  .coming-soon img,
+  .landing img {
+    width: 50%;
+    height: auto;
+  }
+}
